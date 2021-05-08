@@ -1,0 +1,15 @@
+<div
+  class="card__header--container"
+  *ngIf="options.type === 'icon'"
+  [ngStyle]="{ height: options.height }"
+>
+  <i class="card--icon"></i>
+</div>
+
+<div
+  class="card__header--container"
+  *ngIf="options.type === 'text'"
+  [ngStyle]="{ height: options.height }"
+>
+  <p class="card-text">test header card</p>
+</div>
