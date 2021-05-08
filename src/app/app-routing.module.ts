@@ -1,3 +1,4 @@
+import { PostComponent } from './pages/post/post.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -20,6 +21,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: 'welcome', component: WelcomeComponent },
+      { path: 'post', component: PostComponent },
     ],
   },
 ];

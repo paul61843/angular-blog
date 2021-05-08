@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { CardComponent } from './components/card/card.component';
+import { RouterModule } from '@angular/router';
 
 const components = [
   HeaderComponent,
@@ -27,14 +28,16 @@ const components = [
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule,
   ],
   exports: [
+    ...components,
     MatCardModule,
     MatInputModule,
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    ...components,
+    RouterModule,
   ],
 })
 export class SharedModule {}

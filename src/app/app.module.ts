@@ -9,6 +9,7 @@ import { SharedModule } from '@shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { LayoutComponent } from './layout/layout.component';
+import { PostComponent } from './pages/post/post.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LayoutComponent } from './layout/layout.component';
     LoginComponent,
     WelcomeComponent,
     LayoutComponent,
+    PostComponent,
   ],
   imports: [
     FormsModule,
