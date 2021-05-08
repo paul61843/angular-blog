@@ -1,0 +1,7 @@
+$phone-size: "max-width:600px";
+
+@mixin mediaScreen($size) {
+  @media ($size) {
+    @content;
+  }
+}
